@@ -20,7 +20,7 @@ Reads deeply into a template directory structure and reconstructs it in another 
 import { populateTemplates } from '@universal-packages/template-populator'
 
 async function test() {
-  await populateTemplates('./templates', 'proyect/directory')
+  await populateTemplates('./templates', 'project/directory')
 }
 
 test()
@@ -43,7 +43,7 @@ templates
 We will end up with something like
 
 ```text
-proyect/directory
+project/directory
   |- app
     |- App.js
     |- models
@@ -79,7 +79,7 @@ Reads the spcified template file replace any vairables in it and save it to the 
 import { transferTemplateFile } from '@universal-packages/template-populator'
 
 async function test() {
-  await transferTemplateFile('./templates/App.js.template', 'proyect/directory/App.js')
+  await transferTemplateFile('./templates/App.js.template', 'project/directory/App.js')
 }
 ```
 ## Options
