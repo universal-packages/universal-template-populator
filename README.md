@@ -37,7 +37,7 @@ templates
   |- config
     |- db.json.template
     |- secrets
-      |- api.ymal.template
+      |- api.yaml.template
 ```
 
 We will end up with something like
@@ -51,13 +51,13 @@ project/directory
   |- config
     |- db.json
     |- secrets
-      |- api.ymal
+      |- api.yaml
 ```
 
 ## Options
 
 - `override` `boolean`
-  If the file already exists in the destination location, should i be overrided or should it be let alone
+  If the file already exists in the destination location, should it be override or should it be let alone
 
 - **`replacementVariables`** `string[]`
   Provide variables to be replaced in the template files with the format {{ variable }}
@@ -69,11 +69,11 @@ project/directory
   ```
 
 - **`templateExtension`** `string`
-  By default `.template` files are goint to be the ones being mapped, but you can change which extension should be used.
+  By default `.template` files are going to be the ones being mapped, but you can change which extension should be used.
 
 ## transferTemplateFile()
 
-Reads the spcified template file replace any vairables in it and save it to the destination location. So basicaly handles just one file.
+Reads the specified template file replace any variables in it and save it to the destination location. So basically handles just one file.
 
 ```js
 import { transferTemplateFile } from '@universal-packages/template-populator'
@@ -85,7 +85,7 @@ async function test() {
 ## Options
 
 - `override` `boolean`
-  If the file already exists in the destination location, should i be overrided or should it be let alone
+  If the file already exists in the destination location, should i be override or should it be let alone
 
 - **`replacementVariables`** `string[]`
   Provide variables to be replaced in the template files with the format {{ variable }}
@@ -102,7 +102,7 @@ This library is developed in TypeScript and shipped fully typed.
 
 ## Contributing
 
-The development of this library in the open on GitHub, and we are grateful to the community for contributing bugfixes and improvements. Read below to learn how you can take part in improving this library.
+The development of this library happens in the open on GitHub, and we are grateful to the community for contributing bugfixes and improvements. Read below to learn how you can take part in improving this library.
 
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 - [Contributing Guide](./CONTRIBUTING.md)

@@ -5,7 +5,7 @@ import { replaceEnv, replaceVars } from '@universal-packages/variable-replacer'
 import { TransferTemplateFileOptions } from './transferTemplateFile.types'
 import { TemplatePopulationInfo } from './populateTemplates.types'
 
-/** Reads the spcified template file replace any vairables in it and save it to the destination location */
+/** Reads the specified template file replace any variables in it and save it to the destination location */
 export function transferTemplateFile(fromLocation: string, toLocation: string, options?: TransferTemplateFileOptions): TemplatePopulationInfo {
   const finalOptions: TransferTemplateFileOptions = { override: false, replacementVariables: {}, ...options }
   const finalFromLocation = checkFile(fromLocation)
