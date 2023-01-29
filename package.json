@@ -14,8 +14,8 @@
     "test:clear": "jest --clearCache"
   },
   "dependencies": {
-    "@universal-packages/directory-traversal": "^1.2.0",
-    "@universal-packages/variable-replacer": "^1.0.0"
+    "@universal-packages/directory-traversal": "1.2.1",
+    "@universal-packages/variable-replacer": "1.0.1"
   },
   "devDependencies": {
     "@types/jest": "^28.1.0",

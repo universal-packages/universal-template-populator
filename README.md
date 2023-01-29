@@ -12,7 +12,9 @@ For that well known thing that some libraries do to initialize a project by popu
 npm install @universal-packages/template-populator
 ```
 
-## populateTemplates()
+## Global methods
+
+#### **`populateTemplates(fromLocation: string, toLocation: string, [options])`**
 
 Reads deeply into a template directory structure and reconstructs it in another location processing the template files
 
@@ -54,7 +56,7 @@ project/directory
       |- api.yaml
 ```
 
-## Options
+### Options
 
 - `override` `boolean`
   If the file already exists in the destination location, should it be override or should it be let alone
@@ -71,7 +73,7 @@ project/directory
 - **`templateExtension`** `string`
   By default `.template` files are going to be the ones being mapped, but you can change which extension should be used.
 
-## transferTemplateFile()
+#### **`transferTemplateFile(fromLocation: string, toLocation: string, [options])`**
 
 Reads the specified template file replace any variables in it and save it to the destination location. So basically handles just one file.
 
@@ -82,7 +84,8 @@ async function test() {
   await transferTemplateFile('./templates/App.js.template', 'project/directory/App.js')
 }
 ```
-## Options
+
+### Options
 
 - `override` `boolean`
   If the file already exists in the destination location, should i be override or should it be let alone
@@ -110,4 +113,7 @@ The development of this library happens in the open on GitHub, and we are gratef
 ### License
 
 [MIT licensed](./LICENSE).
+
+```
+
 ```
