@@ -1,9 +1,10 @@
-import fs from 'fs'
-import path from 'path'
 import { checkFile, expandPath } from '@universal-packages/fs-utils'
 import { replaceEnv, replaceVars } from '@universal-packages/variable-replacer'
-import { TransferTemplateFileOptions } from './transferTemplateFile.types'
+import fs from 'fs'
+import path from 'path'
+
 import { TemplatePopulationInfo } from './populateTemplates.types'
+import { TransferTemplateFileOptions } from './transferTemplateFile.types'
 
 /** Reads the specified template file replace any variables in it and save it to the destination location */
 export function transferTemplateFile(fromLocation: string, toLocation: string, options?: TransferTemplateFileOptions): TemplatePopulationInfo {

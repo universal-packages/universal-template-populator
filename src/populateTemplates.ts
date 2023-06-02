@@ -1,6 +1,7 @@
-import path from 'path'
-import { traverse, DirectoryMap } from '@universal-packages/directory-traversal'
+import { DirectoryMap, traverse } from '@universal-packages/directory-traversal'
 import { checkDirectory, ensureDirectory } from '@universal-packages/fs-utils'
+import path from 'path'
+
 import { PopulateTemplatesOptions, TemplatePopulationInfo } from './populateTemplates.types'
 import { transferTemplateFile } from './transferTemplateFile'
 

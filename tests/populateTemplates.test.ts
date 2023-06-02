@@ -1,6 +1,7 @@
-import path from 'path'
-import fs from 'fs'
 import { traverse } from '@universal-packages/directory-traversal'
+import fs from 'fs'
+import path from 'path'
+
 import { populateTemplates } from '../src'
 
 afterEach((): void => {
