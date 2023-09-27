@@ -8,7 +8,7 @@ afterEach((): void => {
   fs.rmSync('./tmp', { recursive: true, force: true })
 })
 
-describe('populateTemplates', (): void => {
+describe(populateTemplates, (): void => {
   it('transfer files form one point to another', async (): Promise<void> => {
     let result = await populateTemplates('./tests/__fixtures__/', './tmp')
     expect(result).toEqual([
